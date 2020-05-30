@@ -6,7 +6,7 @@ A Flutter application.
 
 This app is based on workouts developed by the Athlean-X YouTube channel.
 
-To understand how to perform each exercise, please view these following videos:
+To understand how to perform each exercise, please view these following videos or else you won't know what to do:
 
 - [Workouts A and B](https://youtu.be/vc1E5CfRfos)
 - [Ab Workout](https://youtu.be/8jyhJ6TiUPA)
