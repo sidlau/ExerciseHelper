@@ -11,6 +11,8 @@ To understand how to perform each exercise, please view these following videos o
 - [Workouts A and B](https://youtu.be/vc1E5CfRfos)
 - [Ab Workout](https://youtu.be/8jyhJ6TiUPA)
 
+Only the *advanced* exercise names will be displayed to save screen space, but I'm sure you can easily memorize what the respective beginner exercise for each of them is.
+
 Perform Workouts A or B on days MWF, swapping between A and B each day (as explained in the video). The full workout set should be completed 2-3 times.
 
 On the days you are not performing Workouts A or B, you should perform the Ab workout. This can just be done once per day.
@@ -34,7 +36,6 @@ Not sure if the app works on iPhones though but you can try.
 The app is divided into three sections: Workout A, Workout B, and Ab Workout.
 
 The app will display each exercise name and time it for 65 seconds (1 minute for the exercise and an extra 5 seconds to get ready).
-Only the *advanced* exercise names will be displayed to save screen space, but I'm sure you can easily memorize what the respective beginner exercise for each of them is.
 
 How to use:
 
