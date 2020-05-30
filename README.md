@@ -4,18 +4,18 @@ A Flutter application.
 
 ## Overview
 
-This app is based on workouts developed by the Athlean-X YouTube channel.
+This app assists with workouts developed by the Athlean-X YouTube channel.
 
 To understand how to perform each exercise, please **view these following videos** or else you won't know what to do:
 
 - [Workouts A and B](https://youtu.be/vc1E5CfRfos)
 - [Ab Workout](https://youtu.be/8jyhJ6TiUPA)
 
-Only the *advanced* exercise names will be displayed to save screen space, but I'm sure you can easily memorize what the respective beginner exercise for each of them is.
+You will probably need to memorize these exercise names. Only the *advanced* exercise names will be displayed to save screen space, but I'm sure you can easily remember what the respective beginner exercise for each of them is.
 
-Perform **Workouts A or B on days MWF**, swapping between A and B each day (as explained in the video). The full workout set should be completed **2-3 times**.
+Perform **Workouts A and B on days MWF**, swapping between A and B each workout day (as explained in the video). The full workout set should be completed **2-3 times** per workout day.
 
-You should perform the **Ab workout on all the other days**. This can just be done **once per day**.
+Perform the **Ab workout on all the other days**. This can just be done **once per day**.
 
 ## Downloading the App
 
@@ -29,7 +29,7 @@ Method 2:
 3. cd into ExerciseHelper directory
 4. Run flutter install
 
-Don't think the app works on iPhones though but you can try at your own risk.
+Don't think the app works on iPhones right now. I'm working on it~
 
 ## Using the App
 
@@ -44,11 +44,11 @@ How to use:
 3. After the timer ends, a chime will play and the next exercise will be displayed on the screen
 - Use the drop-down menu on the top to reset the timer or workout
 
-## Additional Things to Note
+## Additional Exercises / Things to Note
 
-I highly recommend **extra pushup exercises** after performing Workouts A or B to work the chest muscles some more. I personally do a few sets of Wide-arm Pushups, Staggered Pushups, and Diamond Pushups.
+I highly recommend **extra pushup exercises** after performing Workout A or B to work the chest muscles some more. I personally do a few sets of Wide-arm Pushups, Staggered Pushups, and Diamond Pushups.
 
-I also highly recommend purchasing resistance bands like [this](https://www.amazon.com/dp/B07W6XKRYD/ref=twister_B07W81TBZ7?th=1&psc=1) or [this](https://www.amazon.com/LETSCOM-Resistance-Exercise-Powerlifting-Exercises/dp/B07H3PJ4M4/ref=sr_1_2?crid=1OL6MV1L507WB&dchild=1&keywords=letscom%2Bresistance%2Bbands&qid=1590835773&s=sporting-goods&sprefix=letscom%2B%2Csporting%2C207&sr=1-2&th=1) to perform **[back conditioning exercises](https://www.youtube.com/watch?v=ELe4fATl-Jg)**.
+I also highly recommend purchasing resistance bands like [this](https://www.amazon.com/dp/B07W6XKRYD/ref=twister_B07W81TBZ7?th=1&psc=1) or [this](https://www.amazon.com/LETSCOM-Resistance-Exercise-Powerlifting-Exercises/dp/B07H3PJ4M4/ref=sr_1_2?crid=1OL6MV1L507WB&dchild=1&keywords=letscom%2Bresistance%2Bbands&qid=1590835773&s=sporting-goods&sprefix=letscom%2B%2Csporting%2C207&sr=1-2&th=1) to perform **[back conditioning exercises](https://www.youtube.com/watch?v=ELe4fATl-Jg)** every day of the week.
 
 Also remember to keep up your protein intake. These [protein bars](https://www.amazon.com/Pure-Protein-Nutritious-Support-Variety/dp/B01126O3OY/ref=sr_1_1?dchild=1&keywords=protein%2Bbars&qid=1587448618&sr=8-1&th=1) are cheap and taste pretty good. Costco sells bigger 21-bar packs at a lower price.
 
