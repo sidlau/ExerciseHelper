@@ -17,9 +17,17 @@ On the days you are not performing Workouts A or B, you should perform the Ab wo
 
 ## Downloading the App
 
-Make sure Android Studio is installed on your computer, download these app files, and build it on your phone. 
+Method 1:
+1. Download [app-release.apk](./app-release.apk) to your phone
 
-This won't work on iPhones though. Unlucky.
+Method 2:
+1. Download [Flutter](https://flutter.dev/docs/get-started/install)
+2. Connect Android phone to computer via USB (make sure USB debugging is enabled)
+3. Clone ExerciseHelper directory to computer
+3. cd into ExerciseHelper directory
+4. Run flutter install
+
+Not sure if the app works on iPhones though but you can try.
 
 ## Using the App
 
@@ -41,4 +49,4 @@ I would recommend performing extra pushup exercises after performing Workouts A 
 
 Also remember to keep up your protein intake. These [protein bars](https://www.amazon.com/Pure-Protein-Nutritious-Support-Variety/dp/B01126O3OY/ref=sr_1_1?dchild=1&keywords=protein%2Bbars&qid=1587448618&sr=8-1&th=1) are cheap and taste pretty good.
 
-### Good luck and obtain those gainz!
+### Good luck and obtain those gains!
