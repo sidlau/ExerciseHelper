@@ -29,7 +29,7 @@ Method 2:
 3. cd into ExerciseHelper directory
 4. Run flutter install
 
-Not sure if the app works on iPhones though but you can try.
+Don't think the app works on iPhones though but you can try at your own risk.
 
 ## Using the App
 
