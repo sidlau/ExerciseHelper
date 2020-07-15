@@ -4,7 +4,7 @@ A Flutter application.
 
 ## Overview
 
-This app assists with workouts developed by the Athlean-X YouTube channel.
+This app assists with home workouts developed by the Athlean-X YouTube channel. Equipment is not necessarily required, although a pull-up bar will help tremendously.
 
 To understand how to perform each exercise, please **view these following videos** or else you won't know what to do:
 
@@ -13,14 +13,20 @@ To understand how to perform each exercise, please **view these following videos
 
 You will probably need to memorize these exercise names. Only the *advanced* exercise names will be displayed to save screen space, but I'm sure you can easily remember what the respective beginner exercise for each of them is.
 
+## What to Do
+
 Perform **Workouts A and B on days MWF**, swapping between A and B each workout day (as explained in the video). The full workout set should be completed **2-3 times** per workout day.
 
+I highly recommend performing extra pushup exercises after each Workout A or B to work the chest muscles some more. I personally do a few sets of Wide-arm Pushups, Staggered Pushups, and Diamond Pushups.
+
 Perform the **Ab workout on all the other days**. This can just be done **once per day**.
+
+Perform **back conditioning exercises every day** as shown [here](https://www.youtube.com/watch?v=ELe4fATl-Jg). You should purchase 5lb and/or 15lb resistance bands like [this](https://www.amazon.com/dp/B083GWFL1X/ref=cm_sw_r_cp_apa_i_pMPdFbBTS3ZC1) or use [potential alternative methods](https://youtu.be/I-XpxwHqc8g?t=141).
 
 ## Downloading the App
 
 Method 1:
-1. Download [app-release.apk](./app-release.apk) to your phone
+1. Download [app-release.apk](./app-release.apk) to your phone and install it
 
 Method 2:
 1. Download [Flutter](https://flutter.dev/docs/get-started/install)
@@ -29,7 +35,7 @@ Method 2:
 3. cd into ExerciseHelper directory
 4. Run flutter install
 
-Don't think the app works on iPhones right now. I'm working on it~
+The app only works on Android phones right now. Yell at me and I might make it work for iPhones.
 
 ## Using the App
 
@@ -44,12 +50,8 @@ How to use:
 3. After the timer ends, a chime will play and the next exercise will be displayed on the screen
 - Use the drop-down menu on the top to reset the timer or workout
 
-## Additional Exercises / Things to Note
+## Important Things to Note
 
-I highly recommend **extra pushup exercises** after performing Workout A or B to work the chest muscles some more. I personally do a few sets of Wide-arm Pushups, Staggered Pushups, and Diamond Pushups.
-
-I also highly recommend purchasing resistance bands like [this](https://www.amazon.com/dp/B07W6XKRYD/ref=twister_B07W81TBZ7?th=1&psc=1) or [this](https://www.amazon.com/LETSCOM-Resistance-Exercise-Powerlifting-Exercises/dp/B07H3PJ4M4/ref=sr_1_2?crid=1OL6MV1L507WB&dchild=1&keywords=letscom%2Bresistance%2Bbands&qid=1590835773&s=sporting-goods&sprefix=letscom%2B%2Csporting%2C207&sr=1-2&th=1) to perform **[back conditioning exercises](https://www.youtube.com/watch?v=ELe4fATl-Jg)** every day of the week.
-
-Also remember to keep up your protein intake. These [protein bars](https://www.amazon.com/Pure-Protein-Nutritious-Support-Variety/dp/B01126O3OY/ref=sr_1_1?dchild=1&keywords=protein%2Bbars&qid=1587448618&sr=8-1&th=1) are cheap and taste pretty good. Costco sells bigger 21-bar packs at a lower price.
+Remember to keep up your protein intake! Very, very important or else you will not see improvements. MyProtein has frequent sales on their [Impact Whey Isolate](https://us.myprotein.com/sports-nutrition/impact-whey-isolate/10852482.html). The flavors taste pretty freakin amazing (except vanilla and strawberry). Use my referral link https://us.myprotein.com/referrals.list?applyCode=SID-RGG or code **SID-RGG** for 35% off :^)
 
 ### Good luck and obtain those gains!
