@@ -58,6 +58,6 @@ Remember to keep up your protein intake! Very, very important or else you will n
 
 Special thanks to outside contributors from the community:
 - [Falsidge](https://github.com/falsidge) for solving annoying audio issues
-- [Damian](https://github.com/DamianRivas) for providing feedback on the app and emotional support
+- [Damian](https://github.com/DamianRivas) for providing app feedback and emotional support
 
 ### Good luck and obtain those gains!
