@@ -3,10 +3,13 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/rendering.dart';
+import 'package:wakelock/wakelock.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
 import 'package:assets_audio_player/assets_audio_player.dart';
+
+const int TIMER = 65;
 
 void main() => runApp(ExerciseHelper());
 
@@ -14,6 +17,7 @@ class ExerciseHelper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+    Wakelock.enable();
     return MaterialApp(
         title: 'Exercise Helper',
         theme: ThemeData(
@@ -108,8 +112,9 @@ class WorkoutView extends StatefulWidget {
 
 class _WorkoutViewState extends State<WorkoutView> {
   bool started = false;
+  bool sound = true;
   Timer timer;
-  int timeCounter = 65;
+  int timeCounter = TIMER;
   int index = 0;
 
   final audioPlayer = AssetsAudioPlayer();
@@ -134,10 +139,12 @@ class _WorkoutViewState extends State<WorkoutView> {
         setState(() {
           if (started) {
             if (timeCounter <= 1) {
-              audioPlayer.open(
-                Audio("assets/audio/finish.ogg"),
-              );
-              timeCounter = 65;
+              if (sound) {
+                audioPlayer.open(
+                  Audio("assets/audio/finish.ogg"), audioFocusStrategy: AudioFocusStrategy.none()
+                );
+              }
+              timeCounter = TIMER;
               started = !started;
               t.cancel();
               if (index == widget.workout.exercises.length - 1)
@@ -146,11 +153,21 @@ class _WorkoutViewState extends State<WorkoutView> {
                 index++;
             }
             else {
-              timeCounter = timeCounter - 1;
+              timeCounter--;
             }
           }
         });
     });
+  }
+
+  void resetTimer() {
+    if (timer != null) {
+      timer.cancel();
+    }
+    if (started) {
+      started = false;
+    }
+    timeCounter = 65;
   }
 
   @override
@@ -160,6 +177,36 @@ class _WorkoutViewState extends State<WorkoutView> {
         title: Text(widget.workout.name, style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.w700)),
         backgroundColor: widget.workout.color,
         actions: <Widget>[
+          IconButton(
+            icon: Icon(FontAwesomeIcons.angleLeft),
+            color: index == 0 ? Colors.white60 : Colors.white,
+            padding: EdgeInsets.fromLTRB(15.0, 0.0, 15.0, 2.0),
+            highlightColor: Colors.white.withAlpha(0),
+            splashColor: Colors.white.withAlpha(0),
+            onPressed: () {
+              if (index > 0) {
+                setState(() {
+                  resetTimer();
+                  index--;
+                });
+              }
+            }
+          ),
+          IconButton(
+            icon: Icon(FontAwesomeIcons.angleRight),
+            color: index == widget.workout.exercises.length - 1 ? Colors.white60 : Colors.white,
+            padding: EdgeInsets.fromLTRB(15.0, 0.0, 15.0, 2.0),
+            highlightColor: Colors.white.withAlpha(0),
+            splashColor: Colors.white.withAlpha(0),
+            onPressed: () {
+              if (index < widget.workout.exercises.length - 1) {
+                setState(() {
+                  resetTimer();
+                  index++;
+                });
+              }
+            }
+          ),
           PopupMenuButton<String>(
             color: started ? Colors.white : widget.workout.color,
             elevation: 2.0,
@@ -168,16 +215,15 @@ class _WorkoutViewState extends State<WorkoutView> {
             onSelected: (value) {
               if (value == 'Timer' || value == 'Workout') {
                 setState(() {
-                  if (timer != null) {
-                    timer.cancel();
-                  }
-                  if (started) {
-                    started = false;
-                  }
-                  timeCounter = 65;
+                  resetTimer();
                   if (value == 'Workout') {
                     index = 0;
                   }
+                });
+              }
+              else if (value == 'Sound') {
+                setState(() {
+                  sound = !sound;
                 });
               }
             },
@@ -189,6 +235,10 @@ class _WorkoutViewState extends State<WorkoutView> {
               PopupMenuItem<String>(
                   value: 'Workout',
                   child: Text('Reset Workout', style: TextStyle(color: started ? widget.workout.color : Colors.white))
+              ),
+              PopupMenuItem<String>(
+                  value: 'Sound',
+                  child: Text(sound ? 'Sound: ON' : 'Sound: OFF', style: TextStyle(color: started ? widget.workout.color : Colors.white))
               ),
             ],
           )
