@@ -54,8 +54,10 @@ How to use:
 
 Remember to keep up your protein intake! Very, very important or else you will not see improvements. MyProtein has frequent sales on their [Impact Whey Isolate](https://us.myprotein.com/sports-nutrition/impact-whey-isolate/10852482.html). The flavors taste pretty freakin amazing (except vanilla and strawberry). Use my referral link https://us.myprotein.com/referrals.list?applyCode=SID-RGG or code **SID-RGG** for 35% off :^)
 
-### Good luck and obtain those gains!
+## Credits
 
 Special thanks to outside contributors from the community:
 - [Falsidge](https://github.com/falsidge) for solving annoying audio issues
 - [Damian](https://github.com/DamianRivas) for providing feedback on the app and emotional support
+
+### Good luck and obtain those gains!
